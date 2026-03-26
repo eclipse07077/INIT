@@ -1,0 +1,37 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import HeroText from '~/components/widgets/HeroText.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+
+const metadata = {
+  title: '소프트웨어 그룹 - 팀원 소개',
+};
+---
+
+<Layout metadata={metadata}>
+  <HeroText tagline="소프트웨어 그룹" title="팀원 소개" subtitle="세부 그룹별 팀원 소개 페이지로 이동하세요." />
+
+  <Features2
+    items={[
+      {
+        title: '인공지능 연구',
+        description: '',
+        icon: 'tabler:brain',
+        callToAction: { text: '팀원 소개', href: '/groups/software/ai/members' },
+      },
+      {
+        title: '게임 개발',
+        description: '',
+        icon: 'tabler:device-gamepad-2',
+        callToAction: { text: '팀원 소개', href: '/groups/software/game/members' },
+      },
+      {
+        title: '일반 소프트웨어 개발',
+        description: '',
+        icon: 'tabler:code',
+        callToAction: { text: '팀원 소개', href: '/groups/software/general/members' },
+      },
+    ]}
+    columns={3}
+  />
+</Layout>

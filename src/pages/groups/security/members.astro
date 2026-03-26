@@ -1,0 +1,39 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import HeroText from '~/components/widgets/HeroText.astro';
+import Steps from '~/components/widgets/Steps.astro';
+
+const metadata = {
+  title: '정보보안 연구 그룹 - 팀원 소개',
+};
+---
+
+<Layout metadata={metadata}>
+  <HeroText tagline="정보보안 연구 그룹" title="팀원 소개" />
+
+  <Steps
+    title=""
+    items={[
+      {
+        title: '멘토: <span class="font-medium">이정우</span>',
+        description: '스마트IT학부',
+        icon: 'tabler:star',
+      },
+      {
+        title: '팀원: <span class="font-medium">홍길동</span>',
+        description: '',
+        icon: 'tabler:user',
+      },
+      {
+        title: '팀원: <span class="font-medium">홍길동</span>',
+        description: '',
+        icon: 'tabler:user',
+      },
+      {
+        title: '팀원: <span class="font-medium">홍길동</span>',
+        description: '',
+        icon: 'tabler:user',
+      },
+    ]}
+  />
+</Layout>
