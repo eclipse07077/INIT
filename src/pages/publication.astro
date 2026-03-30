@@ -1,7 +1,6 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
 import HeroText from '~/components/widgets/HeroText.astro';
-import Steps from '~/components/widgets/Steps.astro';
 
 const metadata = {
   title: '개인별 실적',
@@ -11,24 +10,170 @@ const metadata = {
 <Layout metadata={metadata}>
   <HeroText tagline="Publication" title="개인별 실적" subtitle="팀원들의 개인별 실적입니다." />
 
-  <Steps
-    title=""
-    items={[
-      {
-        title: '<span class="font-medium">홍길동</span>',
-        description: '실적을 작성하세요.',
-        icon: 'tabler:user',
-      },
-      {
-        title: '<span class="font-medium">홍길동</span>',
-        description: '실적을 작성하세요.',
-        icon: 'tabler:user',
-      },
-      {
-        title: '<span class="font-medium">홍길동</span>',
-        description: '실적을 작성하세요.',
-        icon: 'tabler:user',
-      },
-    ]}
-  />
+  <section class="max-w-5xl mx-auto px-4 pb-16">
+    <!-- 지도 교수 -->
+    <div class="mb-16">
+      <h2 class="text-3xl font-bold mb-2 dark:text-white">지도 교수</h2>
+      <div class="border-b border-gray-200 dark:border-gray-700 mb-8"></div>
+
+      <div class="mb-12">
+        <h3 class="text-2xl font-semibold mb-1 dark:text-white">
+          신용제 교수님 <span class="text-base font-normal text-muted">(인공지능 연구 그룹 멘토)</span>
+        </h3>
+        <p class="text-sm text-muted mb-6">
+          스마트IT학부 · <a href="mailto:dudujr@semyung.ac.kr" class="text-primary">dudujr@semyung.ac.kr</a>
+        </p>
+
+        <h4 class="text-xl font-semibold mb-4 dark:text-white">논문</h4>
+
+        <h5 class="text-lg font-semibold mb-3 text-primary">International Journal Papers</h5>
+        <ol class="list-none space-y-3 mb-8 text-muted">
+          <li>
+            [20] Shin Y, Choi H, Nam Y, Lee E. PSO-Based Dynamic RSU Role Assignment Framework for Scalable and Reliable
+            Content Delivery in VANETs. <em>Sensors</em>. 2026; 26(5):1555.
+          </li>
+          <li>
+            [19] Nam, Y., Shin, Y., Choi, H., & Lee, E. (2026). Precaching vehicle selection based on soft actor-critic
+            in CIoV. <em>AIMS Mathematics</em>, 11(2), 3314-3348.
+          </li>
+          <li>
+            [18] Shin, Y; Lee, J; Lee, E. (2025, Jun). Energy Balancing and Lifetime Extension: A Random Quorum-Based
+            Sink Location Service Scheme for Wireless Sensor Networks. <em>MDPI Sensors</em> 26(13, 4078)
+          </li>
+          <li>
+            [17] Shin, Y; Choi, HS; Nam, Y; Lee, E. (2025, Dec). Particle Swarm Optimization-Based Content Delivery
+            Protocol for UAV VAENTs. <em>IEEE Access</em> 13(1594-1608)
+          </li>
+          <li>
+            [16] Mugerwa, D; Nam, Y; Choi, H; Shin, Y; Lee, E. (2024, Jun). Adaptive Mobility-Based IoT LoRa Clustering
+            Communication Scheme. <em>MDPI Electronics</em> 13(11, 2052)
+          </li>
+          <li>
+            [15] Nam, Y; Bang, J; Choi, H; Shin, Y; Oh, S; Lee, E. (2023, Jul). Multiple Precaching Vehicle Selection
+            Scheme Based on Set Ranking in Intermittently Connected Vehicular Networks. <em>MDPI Sensors</em> 23(13, 5800)
+          </li>
+          <li>
+            [14] Mugerwa, D; Nam, Y; Choi, H; Shin, Y; Lee, E. (2023, Apr). Implicit Overhearing Node-Based Multi-Hop
+            Communication Scheme in IoT LoRa Networks. <em>MDPI Sensors</em> 23(8, 3874)
+          </li>
+          <li>
+            [13] Nam, Y; Choi, H; Shin, Y; Lee, E. (2023, May). Traffic Optimized Content Precaching Scheme Based on
+            Tolerable Delay Time in Content-Centric Vehicular Networks. <em>IEEE Access</em> 11(53862-53879)
+          </li>
+          <li>
+            [12] Mugerwa, D; Nam, Y; Choi, H; Shin, Y; Lee, E. (2022, Dec). SF-Partition-Based Clustering and Relaying
+            Scheme for Resolving Near-Far Unfairness in IoT Multihop LoRa Networks. <em>MDPI Sensors</em> 22(23, 9332)
+          </li>
+          <li>
+            [11] Nam, Y; Bang, J; Choi, H; Shin, Y; Lee, E. (2022, Nov). Cooperative Content Precaching Scheme Based on
+            the Mobility Information of Vehicles in Intermittently Connected Vehicular Networks. <em
+              >MDPI Electronics</em
+            > 11(22, 3663)
+          </li>
+          <li>
+            [10] Nam, Y; Choi, H; Shin, Y; Park, S; Lee, E. (2022, Oct). Expected Area-Based Real-Time Routing Protocol
+            for Supporting Mobile Sinks in Wireless Sensor Networks. <em>MDPI Electronics</em> 11(20, 3350)
+          </li>
+          <li>
+            [9] Nam, Y; Choi, H; Shin, Y; Mugerwa, D; Lee, E. (2022, Sep). RSU-Aided Optimal Member Replacement Scheme
+            with Improved Mobility Prediction for Vehicular Clouds in VANETs. <em>MDPI Electronics</em> 11(17, 2787)
+          </li>
+          <li>
+            [8] Choi, H; Nam, Y; Shin, Y; Lee, E. (2022, Nov). The partial cloud member replacement for reconstructing
+            vehicular clouds in VANETs: Reactive and proactive schemes. <em>Ad Hoc Networks</em> 136(102959)
+          </li>
+          <li>
+            [7] Choi, H; Nam, Y; Shin, Y; Jung, K; Lee, E. (2022, Jul). Design and Evaluation of Schemes for Replacing
+            Multiple Member Vehicles in Vehicular Clouds. <em>MDPI Electronics</em> 11(13, 2085)
+          </li>
+          <li>
+            [6] Oh, S; Park, S; Shin, Y; Lee, E. (2022, May). Optimized Distributed Proactive Caching Based on Movement
+            Probability of Vehicles in Content-Centric Vehicular Networks. <em>MDPI Sensors</em> 22(9, 3346)
+          </li>
+          <li>
+            [5] Shin, Y; Choi, HS; Nam, Y; Cho, H; Lee, E. (2022, Sep). Particle Swarm Optimization Video Streaming
+            Service in Vehicular Ad-Hoc Networks. <em>IEEE Access</em> 10(102710-102723)
+          </li>
+          <li>
+            [4] Cho, H; Oh, S; Shin, Y; Lee, E. (2021, Nov). Energy-Efficient and Disjoint Multipath Using Face Routing
+            in Wireless Sensor Networks. <em>MDPI Energies</em> 14(22, 7823)
+          </li>
+          <li>
+            [3] Shin, Y; Choi, H; Nam, Y; Lee, E. (2021, Nov). Video Packet Distribution Scheme for Multimedia Streaming
+            Services in VANETs. <em>MDPI Sensors</em> 21(21, 7386)
+          </li>
+          <li>
+            [2] Nam, Y; Choi, H; Shin, Y; Lee, E; Lee, EK. (2021, Aug). Adaptive Content Precaching Scheme Based on the
+            Predictive Speed of Vehicles in Content-Centric Vehicular Networks. <em>MDPI Sensors</em> 21(16, 5376)
+          </li>
+          <li>
+            [1] Shin, Y; Choi, H; Nam, Y; Lee, E. (2020, Oct). Data delivery protocol using the trajectory information
+            on a road map in VANETs. <em>Ad Hoc Networks</em> 107(102260)
+          </li>
+        </ol>
+
+        <h5 class="text-lg font-semibold mb-3 text-primary">International Conference Papers</h5>
+        <ol class="list-none space-y-3 mb-8 text-muted">
+          <li>
+            [8] Nam, Y; Choi, H; Shin, Y; Mugerwa, D; Lee, E. (2023, Jan). Delay Tolerable Precaching Scheme in
+            Content-Centric Vehicular Networks. <em
+              >IEEE 20th Consumer Communications and Networking Conference (CCNC)</em>
+          </li>
+          <li>
+            [7] Nam, Y; Choi, H; Bang, J; Shin, Y; Lee, E. (2023, Jan). Set Ranking-Based Precaching Protocol in
+            Vehicular Ad hoc Networks. <em>IEEE 20th Consumer Communications and Networking Conference (CCNC)</em>
+          </li>
+          <li>
+            [6] Mugerwa, D; Nam, Y; Cho, H; Choi, H; Shin, Y; Lee, E. (2022, Jul). Implicit Multi-hop Communication
+            Scheme based on Overhearing in IoT LoRa Networks. <em
+              >13th International Conference on Ubiquitous and Future Networks (ICUFN)</em>
+          </li>
+          <li>
+            [5] Yim, J; Bang, J; Nam, Y; Shin, Y; Lee, E. (2019, Sep). Efficient Multipath Routing Protocol Against Path
+            Failures in Wireless Sensor Networks. <em>12th IFIP Wireless and Mobile Networking Conference (WMNC)</em>
+          </li>
+          <li>
+            [4] Kim, H; Shin, Y; Lee, Y; Shin, D; Lee, E. (2018, Nov). Event-to-Sink Multipath Routing Protocol for
+            Event Reliability in Wireless Sensor Networks. <em
+              >24th Asia Pacific Conference on Communications (APCC)</em>
+          </li>
+          <li>
+            [3] Shin, Y; Choi, HS; Nam, Y; Lee, E. (2018, Jul). Efficient Data Delivery Protocol using Vehicle Mobility
+            Information in VANETs. <em>10th International Conference on Ubiquitous and Future Networks (ICUFN)</em>
+          </li>
+          <li>
+            [2] Shin, Y; Lee, H; Choi, HS; Lee, E. (2017, Dec). Multipath Construction and Management Protocol for
+            Mobile Sinks in Wireless Sensor Networks. <em>23rd Asia-Pacific Conference on Communications (APCC)</em>
+          </li>
+          <li>
+            [1] Lee, J; Yoon, M; Lee, HK; Shin, Y; Lee, E; Gerla, M. (2016, Sep). Energy-Efficient Mobile Groupcasting
+            Protocol in Wireless Sensor Networks. <em
+              >27th IEEE Annual International Symposium on Personal, Indoor, and Mobile Radio Communications (PIMRC)</em>
+          </li>
+        </ol>
+
+        <h4 class="text-xl font-semibold mb-4 dark:text-white">산학협력 (연구과제)</h4>
+        <ul class="list-none space-y-3 text-muted">
+          <li>2020.03. ~ 2023.02. 모바일 엣지 컴퓨팅을 통한 차량 컨텐츠 캐싱 연구. [한국연구재단]</li>
+          <li>
+            2022.03. ~ 2026.02. 차량 네트워크에서 머신러닝 기반 협력적 콘텐츠 프리캐싱에 관한 연구. [한국연구재단]
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 그룹 멘토 -->
+    <div class="mb-16">
+      <h2 class="text-3xl font-bold mb-2 dark:text-white">그룹 멘토</h2>
+      <div class="border-b border-gray-200 dark:border-gray-700 mb-8"></div>
+      <p class="text-muted">준비 중입니다.</p>
+    </div>
+
+    <!-- 부원 -->
+    <div class="mb-16">
+      <h2 class="text-3xl font-bold mb-2 dark:text-white">부원</h2>
+      <div class="border-b border-gray-200 dark:border-gray-700 mb-8"></div>
+      <p class="text-muted">준비 중입니다.</p>
+    </div>
+  </section>
 </Layout>
