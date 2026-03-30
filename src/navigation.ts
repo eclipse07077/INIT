@@ -1,30 +1,28 @@
-import { getPermalink } from './utils/permalinks';
-
 export const headerData = {
   links: [
     {
       text: 'Mission',
-      href: getPermalink('/#features'),
+      href: '/#features',
     },
     {
       text: 'Groups',
-      href: getPermalink('/#groups'),
+      href: '/#groups',
     },
     {
       text: 'Members',
-      href: getPermalink('/#members'),
+      href: '/#members',
     },
     {
       text: 'Publication',
-      href: getPermalink('/#publication'),
+      href: '/#publication',
     },
     {
       text: 'FAQ',
-      href: getPermalink('/#faq'),
+      href: '/#faq',
     },
     {
       text: 'Contact',
-      href: getPermalink('/#contact'),
+      href: '/#contact',
     },
   ],
   actions: [],
