@@ -1,6 +1,7 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
 import HeroText from '~/components/widgets/HeroText.astro';
+import Steps from '~/components/widgets/Steps.astro';
 
 const metadata = {
   title: '기초 스터디 그룹',
@@ -8,5 +9,50 @@ const metadata = {
 ---
 
 <Layout metadata={metadata}>
-  <HeroText tagline="기초 스터디 그룹" title="TBA" subtitle="준비 중입니다." />
+  <HeroText tagline="기초 스터디 그룹" title="기본적인 프로그래밍 언어 스터디" />
+
+  <Steps
+    title="초보자"
+    subtitle="Python, C 기초 문법 학습"
+    items={[
+      {
+        title: '코딩을 처음으로 시작하는 사람들을 위해 기초부터 배우는 코스',
+        icon: 'tabler:book',
+      },
+      {
+        title: '계산기와 같은 간단한 프로그램을 제작',
+        icon: 'tabler:code',
+      },
+      {
+        title: '백준 사이트 브론즈 티어 문제 풀이',
+        icon: 'tabler:trophy',
+      },
+    ]}
+  />
+
+  <Steps
+    title="중급자"
+    subtitle="Python, C 알고리즘 학습"
+    items={[
+      {
+        title: 'Python, C 언어의 문법을 다 배운 사람들을 위한 고급 코스',
+        icon: 'tabler:chart-line',
+      },
+      {
+        title: '백준 사이트 실버, 골드 티어 문제 풀이',
+        icon: 'tabler:trophy',
+      },
+    ]}
+  />
+
+  <Steps
+    title="상급자"
+    subtitle="Java, JavaScript, C++ 학습"
+    items={[
+      {
+        title: 'Python, C 언어를 마스터한 사람들을 위한 고급 언어를 배우는 코스',
+        icon: 'tabler:rocket',
+      },
+    ]}
+  />
 </Layout>
